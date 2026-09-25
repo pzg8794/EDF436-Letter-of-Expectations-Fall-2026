@@ -16,10 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Reconstruct final sources
+      - name: Reconstruct final LaTeX source
         run: |
           cat .staging/main-01.b64 .staging/main-02.b64 .staging/main-03.b64 .staging/main-04.b64 | base64 -d > main.tex
-          cat .staging/sources.b64 | base64 -d > SOURCES.md
 
       - name: Build PDF
         uses: xu-cheng/latex-action@v3
