@@ -1,0 +1,37 @@
+name: Finalize Letter PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".staging/READY"
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reconstruct final sources
+        run: |
+          cat .staging/main-01.b64 .staging/main-02.b64 .staging/main-03.b64 .staging/main-04.b64 | base64 -d > main.tex
+          cat .staging/sources.b64 | base64 -d > SOURCES.md
+
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+
+      - name: Commit final submission files
+        run: |
+          cp main.pdf Letter_of_Expectations_Fall_2026.pdf
+          rm -rf .staging
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Finalize Fall 2026 Letter of Expectations"
+          git push
