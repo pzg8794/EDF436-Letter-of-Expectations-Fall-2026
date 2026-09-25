@@ -1,536 +1,256 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{hyphens}{url}
-\documentclass[
-  10pt,
-]{article}
-\usepackage{xcolor}
-\usepackage[margin=0.85in]{geometry}
-\usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\usepackage{iftex}
-\ifPDFTeX
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
-\fi
-% Use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={Letter of Expectations --- Fall 2026 Second Teaching Placement},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+\usepackage[margin=0.72in]{geometry}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{xcolor}
 
-\title{Letter of Expectations --- Fall 2026 Second Teaching Placement}
-\author{}
-\date{}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=1.35em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.55em,itemsep=2pt,topsep=3pt}
+\renewcommand{\arraystretch}{1.18}
+\setlength{\tabcolsep}{5pt}
+\setlength{\LTpre}{4pt}
+\setlength{\LTpost}{7pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+
+\hypersetup{
+  pdftitle={Letter of Expectations - Fall 2026 Second Teaching Placement},
+  pdfauthor={Piter Garcia}
+}
+
+\newcommand{\CandidateName}{Piter Garcia}
+\newcommand{\CandidatePhone}{646-628-8300}
+\newcommand{\CandidateEmail}{pgarcia8@u.rochester.edu}
+\newcommand{\SBTEName}{Patrick Flanagan}
+\newcommand{\SBTEPhone}{585-339-1473}
+\newcommand{\SBTEEmail}{pflanagan@eastiron.org}
+\newcommand{\SchoolName}{Eastridge High School, East Irondequoit Central School District}
+\newcommand{\SchoolAddress}{2350 E Ridge Rd, Rochester, NY 14622}
+\newcommand{\SchoolPhone}{585-339-1450}
+\newcommand{\UBTEName}{Zenon Borys}
+\newcommand{\UBTEPhone}{585-259-9598}
+\newcommand{\UBTEEmail}{zborys@warner.rochester.edu}
 
 \begin{document}
 
 \begin{center}
-{\LARGE\bfseries Letter of Expectations}\\[4pt]
-{\large Fall 2026 Second Teaching Placement}
+{\Large\bfseries COVER LETTER FOR LETTER OF EXPECTATIONS}\\[3pt]
+{\normalsize Fall 2026 Second Teaching Placement}
 \end{center}
 
-\textbf{Draft status:} Working draft for Piter Garcia, Patrick Flanagan,
-and Zenon Borys to review and revise together. It is not approved,
-signed, or submitted. Use the current Warner cover sheet/form if
-required.
+\small
+\textbf{Candidate}\\[1pt]
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.18\textwidth}X@{}}
+Name: & \CandidateName \\
+Phone: & \CandidatePhone \\
+Email: & \href{mailto:\CandidateEmail}{\CandidateEmail} \\
+\end{tabularx}
 
-\textbf{Effective date:} Date of final signature: {[}complete after
-agreement{]}
+\vspace{4pt}
+\textbf{School-Based Teacher Educator}\\[1pt]
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.18\textwidth}X@{}}
+Name: & \SBTEName \\
+Phone: & \SBTEPhone \\
+Email: & \href{mailto:\SBTEEmail}{\SBTEEmail} \\
+Inclusion SBTE: & N/A \\
+\end{tabularx}
 
-\textbf{Placement dates:} September 8--November 20, 2026
-(district-confirmed). This draft records the placement context and
-proposes expectations for the remainder of the placement; it does not
-retroactively approve schedule changes.
+\vspace{4pt}
+\textbf{Placement School}\\[1pt]
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.18\textwidth}X@{}}
+School: & \SchoolName \\
+Address: & \SchoolAddress \\
+Telephone: & \SchoolPhone \\
+\end{tabularx}
 
-\textbf{Privacy:} Keep this draft in the local EDF436 workspace and the
-private Overleaf project. Do not commit the letter or upload it to the
-link-accessible EDF436 or TeachingPlacement Drive folders. Do not
-include student-identifying information.
+\vspace{4pt}
+\textbf{University-Based Teacher Educator}\\[1pt]
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.18\textwidth}X@{}}
+Name: & \UBTEName \\
+Phone: & \UBTEPhone \\
+Email: & \href{mailto:\UBTEEmail}{\UBTEEmail} \\
+Inclusion UBTE: & N/A \\
+\end{tabularx}
 
-\subsection{Cover Letter --- complete every applicable
-field}\label{cover-letter--complete-every-applicable-field}
+\vspace{7pt}
+\textbf{Acknowledgement}
 
-\begin{longtable}[]{@{}p{0.20\linewidth}p{0.36\linewidth}p{0.36\linewidth}@{}}
-\toprule\noalign{}
-Required field & Draft entry & Confirmation needed \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Candidate name & Piter Garcia & Confirm preferred name/signature form \\
-Candidate phone & {[}enter{]} & Candidate to complete \\
-Candidate email &
-\href{mailto:pgarcia8@u.rochester.edu}{\nolinkurl{pgarcia8@u.rochester.edu}}
-& Confirm best address \\
-School-Based Teacher Educator & Patrick Flanagan & Confirm name and
-preferred title \\
-SBTE phone & {[}enter preferred school contact{]} & Confirm with
-Patrick \\
-SBTE email & {[}enter{]} & Confirm with Patrick \\
-Inclusion SBTE & {[}N/A if no separate inclusion SBTE is assigned{]} &
-Confirm with Zenon; complete contact fields if applicable \\
-School & Eastridge Senior High School (EHS), East Irondequoit Central
-School District & Confirm official school-name formatting \\
-School address & {[}enter{]} & Confirm from school directory \\
-School telephone & {[}enter{]} & Confirm from school directory \\
-University-Based Teacher Educator & Zenon Borys --- Computer Science &
-Confirm preferred title \\
-UBTE phone & {[}enter preferred number{]} & Confirm with Zenon \\
-UBTE email &
-\href{mailto:zborys@warner.rochester.edu}{\nolinkurl{zborys@warner.rochester.edu}}
-& Confirm best address \\
-Inclusion UBTE & {[}N/A if no separate inclusion UBTE is assigned{]} &
-Confirm with Zenon; complete contact fields if applicable \\
-Placement & Fall 2026 second teaching placement; Computer
-Science--Technology & Confirm program label \\
-Signatures & Candidate, SBTE, UBTE; inclusion educators if applicable &
-All required participants review the handbook and sign/date the Warner
-cover sheet \\
-\end{longtable}
+All parties have read and agree with the objectives and requirements outlined in this Letter of Expectations and have read the Student Teaching Handbook.
 
-\subsection{I. General Expectations}\label{i-general-expectations}
+\vspace{11pt}
+\begin{tabularx}{\textwidth}{@{}p{0.32\textwidth}X p{0.07\textwidth}p{0.16\textwidth}@{}}
+\textbf{Candidate:} & \hrulefill & \textbf{Date:} & \hrulefill \\[12pt]
+\textbf{School-Based Teacher Educator:} & \hrulefill & \textbf{Date:} & \hrulefill \\[12pt]
+\textbf{University-Based Teacher Educator:} & \hrulefill & \textbf{Date:} & \hrulefill \\
+\end{tabularx}
+\normalsize
 
-This nine-week placement (approximately 45 school days) is a supported
-opportunity to learn the school and classroom context and to contribute
-to planning, instruction, assessment, and classroom routines. The
-candidate, SBTE, and UBTE will make decisions that serve students, fit
-the courses and school context, reflect the candidate's readiness, and
-remain workable for the SBTE. The placement is not expected to follow a
-fixed progression or require the candidate to assume responsibility for
-every class.
+\newpage
 
-The candidate's prior Spring 2026 placement and course work provide a
-foundation in computer-science lesson design, clear learning goals,
-inclusive supports, assessment and feedback, classroom routines, and
-reflection. For this placement, the candidate's planning work has
-connected those practices to Eastridge's business and marketing courses
-and Microsoft Office/365 tools. Examples prepared to date include
-student-created workplace norms; Microsoft 365/Teams workflow
-instruction; short marketing activities tied to the 4 Ps and marketing
-functions; and accessible, visually supported lesson materials with
-clear directions, pacing, and checks for understanding. These examples
-describe the candidate's preparation and developing practice; the SBTE
-retains authority over which materials are used and when.
+\begin{center}
+{\LARGE\bfseries LETTER OF EXPECTATIONS}\\[3pt]
+{\large Fall 2026 Second Teaching Placement}\\[2pt]
+{\normalsize September 8-November 20, 2026}
+\end{center}
 
-All participants will follow East Irondequoit Central School District,
-Eastridge, Warner School, and University policies; protect student and
-family confidentiality; communicate promptly and professionally; and
-seek help early when expectations or circumstances are unclear. The
-Student Teaching Handbook and current course requirements govern where
-this agreement does not specify a procedure.
+\section*{I. General Expectations}
 
-\subsection{II. Specific Requirements and
-Roles}\label{ii-specific-requirements-and-roles}
+This nine-week second student-teaching placement, approximately 45 school days, is designed to provide \CandidateName{} with a substantial and supported teaching experience at Eastridge High School. Piter will participate in the life of the classroom and school, learn the students and instructional context, contribute to planning and assessment, and exercise increasing instructional judgment and responsibility while working closely with \SBTEName{}.
 
-\subsubsection{A. Candidate --- Piter
-Garcia}\label{a-candidate--piter-garcia}
+Responsibilities will increase in ways that serve students, fit the classroom context, reflect Piter's readiness, and remain workable for Patrick. Co-teaching will be used whenever it supports student learning and gives Piter meaningful opportunities to plan, teach, assess, and reflect alongside an experienced educator. Piter is not expected to assume responsibility for every course or section. His primary teaching responsibility will center on the Introduction to Marketing preparation, with continued co-teaching and support in Principles and Tools of Business/Microsoft Office.
 
-The candidate will:
+The entrance and exit from the placement will be intentional. Responsibility will increase quickly enough to provide a substantive teaching experience while preserving continuity for students. During the final portion of the placement, Piter will return responsibilities to Patrick thoughtfully and completely, including agreed grading, documentation, instructional follow-up, and transfer of materials.
 
+All participants will follow East Irondequoit Central School District, Eastridge High School, Warner School, and University policies; protect student and family confidentiality; communicate promptly and professionally; and seek support early when expectations or circumstances are unclear.
+
+\section*{II. Specific Requirements}
+
+\subsection*{A. Candidate - Piter Garcia}
+
+Piter will:
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Attend on the schedule agreed below, arrive prepared, and notify the
-  SBTE and UBTE as soon as possible about an absence, delay, emergency,
-  or requested schedule change using the agreed channels.
-\item
-  Learn the assigned courses, students' learning context, curriculum,
-  classroom routines, school procedures, and approved technology systems
-  through observation and active participation.
-\item
-  Support students individually, in small groups, and during whole-class
-  learning when directed by the SBTE; use respectful, strengths-based
-  communication and follow the SBTE's classroom routines.
-\item
-  Co-plan, co-teach, and lead lesson segments or other instructional
-  responsibilities as agreed with the SBTE and UBTE. Responsibility may
-  grow toward primary responsibility for one or more
-  classes/preparations when the arrangement serves students and all
-  parties agree it is appropriate.
-\item
-  Prepare and review lesson plans using the agreed school and Warner
-  formats. Plans will identify learning goals, lesson sequence,
-  materials/technology, accessible supports, checks for understanding,
-  and likely follow-up adjustments.
-\item
-  Use clear, student-facing directions and reasonable pacing; plan
-  supports such as visual models, vocabulary scaffolds, chunked steps,
-  opportunities to think and respond, and accessible digital materials
-  as appropriate to the lesson and students.
-\item
-  Use Microsoft Office/365, Teams, classroom files, assessment tools,
-  and other school systems only within the SBTE's direction and district
-  policy. The SBTE retains responsibility for official grades, student
-  records, family communication, attendance, and school decisions unless
-  a task is expressly delegated and permitted.
-\item
-  Request and use feedback; reflect on student learning and
-  participation; and make agreed adjustments to instruction. Maintain a
-  private, organized portfolio of plans, reflections, feedback, and
-  permitted de-identified evidence for program requirements.
-\item
-  Maintain professional conduct and boundaries; attend relevant school
-  meetings or activities when invited and appropriate; and communicate
-  with students, families, colleagues, and administrators only in roles
-  and channels authorized by the SBTE/school.
-\item
-  Not act as a substitute or assume sole responsibility for a class in
-  the SBTE's absence. Follow the school's direction and the Handbook's
-  restriction on substituting during clinical experiences.
+  \item Attend according to the schedule in this agreement, arrive prepared, and communicate promptly about absences, delays, emergencies, or schedule changes.
+  \item Learn the assigned courses, curriculum, students' learning context, classroom routines, school procedures, and approved technology systems through observation and active participation.
+  \item Support students individually, in small groups, and during whole-class instruction using respectful, strengths-based communication and Patrick's established classroom routines.
+  \item Co-plan, co-teach, and lead instruction with increasing responsibility. His primary teaching focus will be Introduction to Marketing in Periods 1 and 5C6A. He will continue to co-teach and support Principles and Tools of Business/Microsoft Office in Periods 4 and 7 and participate in the Period 8 co-op/check-in block when instructionally useful.
+  \item Prepare lesson plans and materials that identify learning goals, lesson sequence, materials and technology, accessible supports, checks for understanding, and follow-up adjustments. Plans for new or substantial instruction will be reviewed with Patrick before use.
+  \item Use clear student-facing directions, purposeful pacing, visual models, vocabulary support, chunked steps, response opportunities, and accessible digital materials as appropriate to the lesson and students.
+  \item Use Microsoft Office/365, Teams, classroom files, assessment tools, and other school systems within district policy and Patrick's direction.
+  \item Design and use formative and summative assessments under Patrick's supervision; analyze student evidence and adjust instruction. Patrick retains responsibility for official grades and records while Piter may grade or provide feedback when delegated.
+  \item Route parent/guardian communication through Patrick unless Patrick specifically authorizes Piter's participation. School and administrative communication will follow established building procedures.
+  \item Request and use feedback, reflect on student learning and participation, and maintain an organized private collection of permitted lesson plans, reflections, feedback, and de-identified evidence for Warner requirements.
+  \item Maintain professional conduct, confidentiality, appropriate boundaries, punctuality, and timely communication throughout the placement.
+  \item Not serve as a substitute or assume sole responsibility for a class in Patrick's absence.
 \end{enumerate}
 
-\subsubsection{B. School-Based Teacher Educator --- Patrick
-Flanagan}\label{b-school-based-teacher-educator--patrick-flanagan}
+\subsection*{B. School-Based Teacher Educator - Patrick Flanagan}
 
-The SBTE will:
-
+Patrick will:
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Orient the candidate to the school, assigned courses, students'
-  learning context, curriculum, classroom routines, safety procedures,
-  technology systems, and relevant district/school policies.
-\item
-  Identify meaningful opportunities for the candidate to observe,
-  assist, co-plan, co-teach, support students, and gradually take on
-  instructional responsibility.
-\item
-  Decide with the candidate which class(es), lesson(s), and
-  responsibilities are appropriate at each stage; the candidate is not
-  expected to lead every course or section.
-\item
-  Model instruction, classroom routines, assessment, feedback, and
-  professional practice; clarify what the candidate may do independently
-  and when approval is needed.
-\item
-  Review lesson plans/materials on the agreed schedule, give timely,
-  actionable feedback, and identify any required changes before the
-  candidate teaches or distributes materials.
-\item
-  Confer regularly with the candidate about student learning, upcoming
-  lessons, classroom routines, feedback, and next steps; arrange
-  additional conversations when needed.
-\item
-  Provide ongoing evidence and feedback for program evaluation, complete
-  required school-based forms, and collaborate with the UBTE on
-  observations, evaluation, and a thoughtful transition into and out of
-  the placement.
-\item
-  Serve as the school liaison for student/family matters, official
-  records and grading, discipline, attendance, and school decisions;
-  clarify the boundaries of any delegated candidate tasks.
+  \item Orient Piter to Eastridge, the assigned courses, curriculum, students' learning context, classroom routines, safety procedures, technology systems, and relevant district and school policies.
+  \item Identify meaningful opportunities for Piter to observe, assist, co-plan, co-teach, support students, and gradually assume instructional responsibility.
+  \item Model instruction, classroom routines, assessment, feedback, and professional practice and explain the reasoning behind important instructional and curricular decisions.
+  \item Co-plan with Piter and review lesson plans and materials before new or substantial candidate-led instruction, providing timely and actionable feedback.
+  \item Observe Piter regularly during instruction, provide ongoing feedback, and identify specific next steps for growth.
+  \item Meet with Piter at least weekly during available planning time, with brief daily check-ins as needed, to discuss upcoming instruction, student learning, pacing, feedback, and responsibilities.
+  \item Serve as the school liaison for official grades, records, attendance, discipline, family communication, and school-level decisions and clarify the boundaries of any task delegated to Piter.
+  \item Complete required evaluation responsibilities, including CPAST evaluator training, independent CPAST ratings, evidence discussion, and participation in midpoint and final consensus conferences.
+  \item Collaborate with Zenon on observations, evaluation, support, and the transition into and out of the placement.
 \end{enumerate}
 
-\subsubsection{C. University-Based Teacher Educator --- Zenon
-Borys}\label{c-university-based-teacher-educator--zenon-borys}
+\subsection*{C. University-Based Teacher Educator - Zenon Borys}
 
-The UBTE will:
-
+Zenon will:
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Support the candidate and SBTE in finalizing and, when useful,
-  revisiting this Letter of Expectations.
-\item
-  Clarify University/Warner requirements, the observation process,
-  required forms, timelines, lesson-plan submission expectations, and
-  approved submission channels.
-\item
-  Typically conduct three observations during the nine-week placement,
-  at mutually workable times that are instructionally meaningful. The
-  exact dates and observation procedures will be agreed separately.
-\item
-  Provide observation feedback and facilitate a post-observation
-  conversation with the candidate and SBTE as soon as practical after
-  each observation.
-\item
-  Coordinate the two CPAST administrations with the candidate and SBTE.
-  The candidate completes self-assessments; the SBTE and UBTE complete
-  evaluator training, independently assess the candidate, then meet to
-  review evidence and reach consensus. The midpoint process is
-  formative; the final process is summative. Timing and meeting format
-  will be scheduled by the UBTE.
-\item
-  Remain available to the candidate and SBTE for questions or concerns
-  about the placement, University requirements, evaluation, or support.
+  \item Support Piter and Patrick throughout the placement and clarify Warner requirements, observation procedures, evaluation processes, forms, and submission expectations.
+  \item Conduct three observations during the nine-week placement at instructionally meaningful and mutually workable times.
+  \item Meet with Piter and Patrick as soon as practical after each observation to discuss evidence, feedback, questions, and specific next steps.
+  \item Complete CPAST evaluator training and coordinate two CPAST administrations. For each administration, Piter, Patrick, and Zenon will assess Piter independently and then meet to examine evidence, discuss ratings, and reach consensus.
+  \item Use the midpoint CPAST formatively to establish goals for the remainder of the placement and the final CPAST summatively to assess performance and identify goals for the transition into professional practice.
+  \item Remain available to Piter and Patrick for questions, concerns, or additional support throughout the placement.
 \end{enumerate}
 
-\subsection{III. Schedule and Responsibility
-Timeline}\label{iii-schedule-and-responsibility-timeline}
+\section*{III. Schedule}
 
-\subsubsection{A. Attendance schedule}\label{a-attendance-schedule}
+\subsection*{A. Daily Schedule}
 
-\begin{longtable}[]{@{}p{0.20\linewidth}p{0.36\linewidth}p{0.36\linewidth}@{}}
-\toprule\noalign{}
-Schedule item & Proposed agreement & Confirm before signature \\
-\midrule\noalign{}
+Piter will arrive at Eastridge by \textbf{7:00 a.m.} so that he is prepared for the first instructional block at 7:30 a.m. On normal placement days, he will remain through his final planned instructional and planning responsibilities, ordinarily concluding at approximately \textbf{2:15 p.m.} and no later than \textbf{2:30 p.m.} On previously communicated RIT DSCI602 meeting dates, Piter will leave Eastridge at \textbf{11:30 a.m.} to travel to the required noon RIT class block. Schedule changes will be communicated as early as possible and coordinated with Patrick and Zenon.
+
+The regular placement map is:
+
+\begin{longtable}{@{}p{0.17\textwidth}p{0.22\textwidth}p{0.53\textwidth}@{}}
+\toprule
+\textbf{Block} & \textbf{Regular time} & \textbf{Placement responsibility} \\
+\midrule
 \endhead
-\bottomrule\noalign{}
-\endlastfoot
-Placement span & September 8--November 20, 2026; district-confirmed &
-Any individually approved exception or school-closure adjustment \\
-Placement days & Monday--Friday, following the live Eastridge calendar
-and SBTE assignment & Which days the candidate is expected on site;
-confirm any date-specific University-course conflict plan \\
-Arrival & By 7:00 a.m. to prepare for the 7:30 a.m. first class;
-supported by the placement planning conversation & Patrick confirms this
-remains the expected arrival time \\
-Daily departure & {[}agree on the expected departure time and any
-different date-specific arrangement{]} & Do not treat personal calendar
-travel/departure blocks as school approval \\
-Class schedule & Current placement map includes Introduction to
-Marketing (Period 1, 7:30--8:12 a.m.; Period 5C6A, 11:32 a.m.--12:14
-p.m.) and Principles and Tools of Business (Period 4, 9:58--10:40 a.m.;
-Period 7, 12:49--1:31 p.m.; Microsoft Office in Term 1) & Patrick
-confirms assigned classes/sections and current bell/advisory schedule \\
-Absence / urgent contact & {[}agree on same-day phone/text route and
-follow-up email{]} & Patrick and Zenon confirm preferred contacts \\
-Make-up time & Determined under district and University policy with the
-SBTE/UBTE & Confirm how missed time is recorded or made up \\
+Period 1 & 7:30-8:12 a.m. & Introduction to Marketing; primary teaching focus with increasing responsibility. \\
+Periods 2-3 & 8:17-9:53 a.m. & Planning, preparation, lesson review, reflection, and school responsibilities. \\
+Period 4 & 9:58-10:40 a.m. & Principles and Tools of Business/Microsoft Office; co-teaching and instructional support. \\
+Period 5C6A & 11:32 a.m.-12:14 p.m. & Introduction to Marketing; primary teaching focus with increasing responsibility. \\
+C lunch & 12:18-12:44 p.m. & Lunch. \\
+Period 7 & 12:49-1:31 p.m. & Principles and Tools of Business/Microsoft Office; co-teaching and instructional support. \\
+Period 8 & 1:36-2:18 p.m. & Co-op/check-in, planning, student support, and transition work when instructionally useful. \\
+\bottomrule
 \end{longtable}
 
-The class list and bell times above reflect the current placement map
-and school schedule reviewed for preparation. The SBTE's current
-assignment and live school schedule control. The candidate will not
-treat calendar planning blocks, travel buffers, or course-conflict
-workarounds as school-approved attendance hours.
+School-announced advisory, assembly, closure, testing, or other modified schedules supersede the regular bell schedule.
 
-\subsubsection{B. Planned progression of
-responsibilities}\label{b-planned-progression-of-responsibilities}
+\subsection*{B. Progression of Teaching Responsibility}
 
-The following is a discussion framework, not a fixed week-by-week
-mandate. At each stage, the candidate and SBTE will set the next step
-based on students' needs, the curriculum, readiness, and the SBTE's
-judgment. The UBTE will advise as needed.
-
-\begin{longtable}[]{@{}p{0.20\linewidth}p{0.36\linewidth}p{0.36\linewidth}@{}}
-\toprule\noalign{}
-Stage & Candidate focus & Agreed check before moving forward \\
-\midrule\noalign{}
+\begin{longtable}{@{}p{0.22\textwidth}p{0.70\textwidth}@{}}
+\toprule
+\textbf{Dates} & \textbf{Responsibilities} \\
+\midrule
 \endhead
-\bottomrule\noalign{}
-\endlastfoot
-Orientation and entry & Learn routines and assigned courses; observe
-teaching, student engagement, assessment, and classroom expectations;
-assist students and prepare bounded contributions & SBTE identifies
-appropriate tasks, access boundaries, and first planning/feedback
-routine \\
-Supported participation & Co-plan and co-teach selected segments;
-support individual/small-group/whole-class learning; use short
-activities and materials approved by the SBTE & Review lesson goals,
-directions, student supports, time, and checks for understanding before
-use \\
-Increased responsibility & Lead agreed lessons, segments, or one or more
-preparations when appropriate; assess learning and reflect with the
-SBTE; adjust based on evidence & SBTE and candidate agree on scope,
-timing, supervision, grading/record duties, and feedback \\
-Transition and exit & Return all assumed teaching and classroom
-responsibilities deliberately; finish agreed
-grading/documentation/follow-up; hand off materials and current
-student-learning information through approved channels & Candidate,
-SBTE, and UBTE agree on final responsibilities and confirm nothing
-assumed by the candidate is left incomplete \\
+Sep. 8-11 & Orientation and entry: learn routines, students, course structures, district systems, and classroom expectations; observe instruction; assist students; prepare bounded instructional contributions. \\
+Sep. 14-25 & Supported participation: co-plan and lead short marketing activities and lesson segments; support Chapter 1 instruction; strengthen pacing, directions, whole-room awareness, Microsoft 365/Teams workflow support, and formative checks. \\
+Sep. 28-Oct. 16 & Increased responsibility: co-plan and teach full Introduction to Marketing lessons and connected lesson sequences in Periods 1 and 5C6A; continue co-teaching and support in Periods 4 and 7; use assessment evidence to adjust instruction. \\
+Oct. 19-Nov. 6 & Primary responsibility: assume primary planning and instructional responsibility for agreed Introduction to Marketing sequences, including assessment and feedback, with Patrick's oversight; expand responsibility in other assigned classes when appropriate. \\
+Nov. 9-13 & Consolidation and transition planning: maintain agreed teaching responsibility, complete assessment and feedback cycles, organize materials, and identify responsibilities that need to transfer back to Patrick. \\
+Nov. 16-20 & Intentional exit and hand-back: transfer primary responsibility fully to Patrick; complete agreed grading, documentation, instructional follow-up, material organization, and student-learning handoff through approved school systems. \\
+\bottomrule
 \end{longtable}
 
-The specific classes to observe, co-teach, and lead, and the timing of
-each transition, remain {[}to be agreed with Patrick and Zenon{]}.
+\section*{IV. Lesson Plans}
 
-\subsection{IV. Lesson Plans}\label{iv-lesson-plans}
+Piter and Patrick will use the school's planning systems for classroom instruction and the Warner lesson-plan format when required for University observation or coursework. Piter will share plans for new or substantial candidate-led instruction at least one school day before use whenever possible. Patrick and Piter will review planning at least weekly during the shared Periods 2-3 planning window, with brief daily checks when the next day's instruction requires adjustment.
 
-The candidate and SBTE will use {[}school lesson-plan format/location{]}
-for school teaching and {[}Warner lesson-plan format when required for
-an observation or course submission{]}. Before the candidate teaches or
-distributes a new lesson/activity, they will review it with the SBTE at
-least {[}agreed lead time{]} in advance. Routine plans will be reviewed
-{[}agreed cadence{]}; the candidate and SBTE will set a regular
-planning/check-in time of {[}day/time{]}.
+Planning reviews will address learning goals and course alignment, lesson sequence, anticipated student responses, accessible supports, materials and technology, pacing and transitions, checks for understanding, assessment, and instructional follow-up. Patrick will determine whether a candidate-prepared activity is used as written, adapted, or deferred.
 
-Reviews will confirm the learning target and course alignment, lesson
-sequence, anticipated student responses, accessible supports, materials
-and technology, time limits/transitions, checks for understanding, and
-how evidence will inform next steps. The SBTE decides whether a proposed
-activity is used, adapted, or deferred. Candidate work to
-date---including clear marketing-task directions, student-created
-classroom-norms planning, Microsoft 365 workflow materials, and visually
-supported/UDL-informed resources---may be adapted only when the SBTE
-approves it for the assigned class and current lesson sequence.
-
-\subsection{V. Meetings and
-Communication}\label{v-meetings-and-communication}
+\section*{V. Meetings and Communication}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \textbf{Regular SBTE--candidate meeting:} Meet {[}weekly / other
-  agreed cadence{]} at {[}day/time or planning period{]} for
-  approximately {[}duration{]}. Focus: upcoming instruction, lesson-plan
-  review, student-support needs, feedback, reflection, and next steps.
-\item
-  \textbf{Additional meetings:} Either the candidate or SBTE may request
-  a meeting through {[}agreed school channel{]}. Arrange it at a
-  mutually workable time; address urgent safety or student concerns
-  through school procedures immediately.
-\item
-  \textbf{UBTE check-ins:} The candidate, SBTE, and UBTE will
-  communicate as needed to coordinate the letter, observations,
-  assessments, and concerns.
-\item
-  \textbf{Post-observation meeting:} The candidate, SBTE, and UBTE will
-  meet as soon as practical after each UBTE observation to discuss
-  evidence, feedback, questions, and specific next steps.
-\item
-  \textbf{Routine / urgent contact:} Use {[}approved email/channel{]}
-  for planning and formal records and {[}approved call/text route{]} for
-  same-day absence, delay, or urgent updates. Confirm which channel each
-  person should use.
-\item
-  \textbf{Confidentiality:} Do not place identifiable student
-  information in personal files, email, screenshots, presentations, or
-  external services. Store and share school/student records only through
-  district-approved systems and permissions.
+  \item \textbf{Regular SBTE-candidate meeting:} Patrick and Piter will meet at least weekly, normally during available Periods 2-3 planning time, for approximately 20-30 minutes. The focus will be upcoming instruction, lesson-plan review, student-support needs, feedback, reflection, assessment, and next steps.
+  \item \textbf{Daily coordination:} Patrick and Piter will use brief check-ins before or during planning time to confirm the day's instructional roles and any needed adjustments.
+  \item \textbf{Additional meetings:} Either party may request an additional meeting by email, phone, or in-person coordination. Urgent student or safety concerns will be addressed immediately through school procedures.
+  \item \textbf{Post-observation meetings:} Piter, Patrick, and Zenon will meet as soon as practical after each UBTE observation to review the lesson, evidence, strengths, areas for growth, and next instructional goal.
+  \item \textbf{Routine communication:} Email will be used for formal planning, University documentation, and non-urgent coordination. Same-day absences, delays, or urgent schedule changes will be communicated by phone or text to Patrick as early as possible, with University notification to Zenon and any required written documentation.
+  \item \textbf{Confidentiality:} Identifiable student information will be stored and shared only through district-approved systems and according to school and University requirements.
 \end{enumerate}
 
-\subsection{VI. Observations and
-Evaluation}\label{vi-observations-and-evaluation}
+\section*{VI. Observations and Evaluation}
 
-\begin{longtable}[]{@{}p{0.20\linewidth}p{0.36\linewidth}p{0.36\linewidth}@{}}
-\toprule\noalign{}
-Process & Working expectation & Confirm with UBTE/SBTE \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-SBTE observation and feedback & Ongoing classroom feedback; pre-lesson
-review when appropriate & Observation/check-in cadence and feedback
-method \\
-UBTE observations & Typically three during the placement & Dates,
-lesson-plan lead time, and observation protocol \\
-Post-observation conversation & Candidate, SBTE, and UBTE meet as soon
-as practical after each observation & Scheduling method \\
-CPAST & Two administrations; candidate self-assessment and evaluator
-assessments by SBTE/UBTE, followed by evidence review and consensus &
-Dates; midpoint and final meeting format \\
-Field-placement evaluation & The syllabus describes a 100-hour
-field-placement evaluation before transition to student teaching & UBTE
-confirms whether and when that form applies to this second-placement
-segment \\
-Evidence and portfolio & Candidate maintains permitted plans,
-reflections, feedback, and de-identified evidence for evaluation and the
-Field Experience Resource Guide & Approved location, access, retention,
-and sharing rules \\
-\end{longtable}
+Patrick will observe Piter continuously through their shared classroom work and provide regular informal feedback. Before a UBTE observation, Patrick and Piter will review the planned lesson and identify any priority areas for feedback.
 
-\subsection{VII. Possible Situations}\label{vii-possible-situations}
+Zenon will conduct \textbf{three formal observations} during the placement. Observation dates will be scheduled by email so that each visit captures meaningful instruction and works for the school and University schedules. Piter will provide the required lesson plan and related materials according to Warner expectations before each observation.
+
+The placement will include \textbf{two CPAST administrations}. Piter will complete a self-assessment for each administration. Patrick and Zenon will complete the required evaluator training and independent ratings. The three participants will then meet to review evidence, discuss ratings, and reach consensus. The midpoint CPAST will be scheduled after the first or second observation early enough to create meaningful growth goals for the remainder of the placement. The final CPAST will occur after the third observation and will serve as the summative assessment of the placement.
+
+Evidence will come from across the placement, including planning materials, assessment evidence, reflections, classroom interactions, observations, and Patrick's sustained knowledge of Piter's daily practice. Piter will maintain permitted, de-identified evidence for the Field Experience Resource Guide and other Warner requirements.
+
+\section*{VII. Possible Situations}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \textbf{SBTE absence:} The candidate contacts the designated
-  administrator or school contact and follows the school's direction.
-  The candidate does not substitute or take sole responsibility for the
-  class.
-\item
-  \textbf{Candidate absence or delay:} The candidate contacts the SBTE
-  and UBTE promptly through the agreed urgent channel, then follows any
-  required written notice and make-up process.
-\item
-  \textbf{School closure, weather, or emergency:} Follow East
-  Irondequoit/Eastridge announcements and procedures. The candidate
-  contacts the SBTE/UBTE if the effect on attendance or instruction is
-  unclear.
-\item
-  \textbf{Schedule or University-course conflict:} Raise the conflict
-  with the SBTE and UBTE as early as possible. A changed arrival,
-  departure, or missed period is effective only when the relevant school
-  and University participants approve it.
-\item
-  \textbf{Instructional, student-support, or safety concern:} Follow
-  school procedure and promptly consult the SBTE. Contact the UBTE when
-  the concern needs University support or cannot be resolved through the
-  regular process.
-\item
-  \textbf{Change in assignment or responsibility:} The candidate, SBTE,
-  and UBTE will discuss the change, its effect on students and course
-  requirements, and any needed revision to this letter.
+  \item \textbf{If Patrick is absent:} Piter will follow the direction of the assigned substitute teacher and building administration. Piter will not serve as a substitute or assume sole legal responsibility for the class. He may assist or teach only within the supervision and procedures established by the school.
+  \item \textbf{If Piter is absent or delayed:} Piter will notify Patrick as early as possible by phone or text and notify Zenon through the University communication channel. He will complete any Warner absence documentation required and coordinate make-up time when a full or partial absence reduces required placement participation.
+  \item \textbf{School closure, snow day, delay, or emergency:} Piter will follow East Irondequoit and Eastridge announcements and procedures. When a closure or delay affects an observation, evaluation, or scheduled teaching responsibility, Piter will contact Patrick and Zenon promptly to reschedule or adjust the plan.
+  \item \textbf{University-course conflict or schedule change:} Piter will communicate the conflict as early as possible and coordinate the affected arrival, departure, or instructional responsibility with Patrick and Zenon.
+  \item \textbf{Instructional, student-support, or safety concern:} Piter will follow school procedures and consult Patrick promptly. Zenon will be contacted when University support, clarification, or mediation is needed.
+  \item \textbf{Change in teaching responsibility:} Piter, Patrick, and Zenon will communicate about any substantial change in Piter's teaching assignment or progression so that the placement continues to serve students and meet Warner requirements.
 \end{enumerate}
 
-\subsection{Agreement and signatures}\label{agreement-and-signatures}
+\vspace{7pt}
+\textbf{Agreement}
 
-By signing the Warner cover sheet, the parties confirm that they have
-reviewed the Student Teaching Handbook and agree to the responsibilities
-and procedures in the final version of this letter. Complete all
-applicable cover-sheet fields, replace every bracketed item with an
-agreed value or an explicit N/A, and attach this agreement to the
-required Warner form.
+The undersigned participants agree to the responsibilities, schedule, communication procedures, and instructional progression described in this Letter of Expectations.
 
-\begin{longtable}[]{@{}p{0.20\linewidth}p{0.36\linewidth}p{0.36\linewidth}@{}}
-\toprule\noalign{}
-Participant & Signature & Date \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Candidate: Piter Garcia &
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ &
-\_\_\_\_\_\_\_\_\_\_ \\
-School-Based Teacher Educator: Patrick Flanagan &
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ &
-\_\_\_\_\_\_\_\_\_\_ \\
-University-Based Teacher Educator: Zenon Borys &
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ &
-\_\_\_\_\_\_\_\_\_\_ \\
-Inclusion School-Based Teacher Educator, if assigned &
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ &
-\_\_\_\_\_\_\_\_\_\_ \\
-Inclusion University-Based Teacher Educator, if assigned &
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ &
-\_\_\_\_\_\_\_\_\_\_ \\
-\end{longtable}
+\vspace{12pt}
+\begin{tabularx}{\textwidth}{@{}p{0.29\textwidth}X p{0.08\textwidth}p{0.18\textwidth}@{}}
+\textbf{Candidate:} & \hrulefill & \textbf{Date:} & \hrulefill \\[12pt]
+\textbf{School-Based Teacher Educator:} & \hrulefill & \textbf{Date:} & \hrulefill \\[12pt]
+\textbf{University-Based Teacher Educator:} & \hrulefill & \textbf{Date:} & \hrulefill \\
+\end{tabularx}
 
 \end{document}
